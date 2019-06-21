@@ -10,20 +10,23 @@
     </head>
     <body>
        <h1 style="text-align: center;">Lottery Number Generator</h1>
-       <button type="button" class="btn btn-primary" id="numberbutton">Generate</button>
+       <button onclick="generatenumber()" type="button" class="btn btn-primary" id="numberbutton" >Generate</button>
        <div id="numbers" style="text-align: center;"> </div>
         <script type="text/javascript">
         var min=111111; 
     var max=999999;  
     var random =Math.floor(Math.random() * (+max - +min)) + +min;
     
+function generatenumber(){
+    document.getElementById("numbers").innerHTML = random;
+}
+
 
     console.log(random);
     
-    document.click = function(event) {
-    document.getElementById("numbers").textContent = random;
+ 
 
-    }
+    
 
         </script>
     </body>
