@@ -1,1 +1,1 @@
-# lotterygame
+#This is used to randomly generate numbers in which to lose all of your money 
